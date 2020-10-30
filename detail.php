@@ -173,7 +173,7 @@
 
 
     $preference->items = array($item);
-    $preference->payer = array($payer);
+    //$preference->payer = array($payer);
     $preference->save();
 ?>
 
