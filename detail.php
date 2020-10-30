@@ -154,8 +154,9 @@
                                         src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
                                         data-preference-id="<?php echo $preference->id; ?>">
                                     </script>
-                                    <h3> <?=$preference->id; ?></h3>
-                                       
+                                    <pre>
+                                        <?php var_dump($preference); ?>
+                                    </pre>                                       
                                 </div>
                             </div>
                         </div>
