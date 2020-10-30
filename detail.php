@@ -134,7 +134,10 @@
                                     </div>
                                     <!-- <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button> -->
 
-                                    <?php
+<?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
     // SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
 
@@ -157,8 +160,7 @@
     // Datos del comprador
 
     $payer = new MercadoPago\Payer();
-    $payer->name = "Lalo";
-    $payer->surname = "Landa";
+    $payer->name = "Lalo Landa";
     $payer->email = "test_user_58295862@testuser.com";
     $payer->phone = array(
         "area_code" => "52",
@@ -173,7 +175,7 @@
 
 
     $preference->items = array($item);
-    //$preference->payer = array($payer);
+    $preference->payer = array($payer);
     $preference->save();
 ?>
 
