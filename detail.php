@@ -172,6 +172,12 @@
         "street_number" => 1602,
         "zip_code" => "03940"
     );
+?>
+    <pre>
+        <?php var_dump($payer); ?>
+    </pre>
+
+<?
 
 
     $preference->items = array($item);
