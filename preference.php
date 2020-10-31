@@ -54,7 +54,7 @@
          "installments" => 6
     );
 
-    $preference->notification_url ="https://hookb.in/6JpeYOZmZLuLbb031DzX";
+    $preference->notification_url ="https://maushg.free.beeceptor.com";
 
     $preference->back_urls = array(
         "success" => "https://damaus-mp-commerce-php.herokuapp.com/success.php",
