@@ -44,15 +44,15 @@
     $preference->auto_return = "approved";
 
 
-    $preference->payment_methods = array(
-        "excluded_payment_methods" => array(
-          array("id" => "amex")
-        ),
-        "excluded_payment_types" => array(
-          array("id" => "atm")
-        ),
-        "installments" => 12
-    );
+    // $preference->payment_methods = array(
+    //     "excluded_payment_methods" => array(
+    //       array("id" => "amex")
+    //     ),
+    //     "excluded_payment_types" => array(
+    //       array("id" => "atm")
+    //     ),
+    //     "installments" => 12
+    // );
 
     $preference->save();
 ?>
