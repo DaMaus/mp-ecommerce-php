@@ -21,9 +21,11 @@
     $item->picture_url = "https://damaus-mp-commerce-php.herokuapp.com/" . str_replace("./","",$_POST['img']);
     $item->quantity = $_POST['unit'];
     $item->unit_price = $_POST['price'];
-    $item->external_reference = "mhernandez4204@gmail.com";
+    //$item->external_reference = "mhernandez4204@gmail.com";
 
     // Datos del comprador
+
+    $preference->external_reference = "mhernandez4204@gmail.com";
 
     $payer = new MercadoPago\Payer();
     $payer->name = "Lalo";
