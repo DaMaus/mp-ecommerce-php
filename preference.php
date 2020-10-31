@@ -26,7 +26,8 @@
     // Datos del comprador
 
     $payer = new MercadoPago\Payer();
-    $payer->name = "Lalo Landa";
+    $payer->name = "Lalo";
+    $payer->surname = "Landa";
     $payer->email = "test_user_58295862@testuser.com";
     $payer->phone = array(
         "area_code" => "52",
@@ -42,7 +43,7 @@
     $preference->items = array($item);
     $preference->payer = $payer;
 
-    //$preference->auto_return = "approved";
+    $preference->auto_return = "approved";
 
 
     $preference->payment_methods = array(
