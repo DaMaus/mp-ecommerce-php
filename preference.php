@@ -54,5 +54,12 @@
          "installments" => 12
     );
 
+    $preference->back_urls = array(
+        "success" => "https://damaus-mp-commerce-php.herokuapp.com/success",
+        "failure" => "https://damaus-mp-commerce-php.herokuapp.com/failure",
+        "pending" => "https://damaus-mp-commerce-php.herokuapp.com/pending"
+    );
+    $preference->auto_return = "approved";
+
     $preference->save();
 ?>
