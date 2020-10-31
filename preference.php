@@ -55,9 +55,9 @@
     );
 
     $preference->back_urls = array(
-        "success" => "https://damaus-mp-commerce-php.herokuapp.com/success",
-        "failure" => "https://damaus-mp-commerce-php.herokuapp.com/failure",
-        "pending" => "https://damaus-mp-commerce-php.herokuapp.com/pending"
+        "success" => "https://damaus-mp-commerce-php.herokuapp.com/success.php",
+        "failure" => "https://damaus-mp-commerce-php.herokuapp.com/failure.php",
+        "pending" => "https://damaus-mp-commerce-php.herokuapp.com/pending.php"
     );
     $preference->auto_return = "approved";
 
