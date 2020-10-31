@@ -78,6 +78,10 @@
                                         <h2 class=" as-filter-button-text">
                                             Felicidades por tu compra
                                         </h2>
+                                        <h3>Detalles de compra</h3>
+                                        <p>Payment Method: <?= $_GET['payment_type'];?></p>
+                                        <p>External Reference: <?= $_GET['external_reference'];?></p>
+                                        <p>Payment ID: <?= $_GET['payment_id'];?></p>
                                     </button>
                                 </div>
                             </div>
