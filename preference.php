@@ -42,8 +42,6 @@
     $preference->items = array($item);
     $preference->payer = $payer;
 
-    echo ("https://damaus-mp-commerce-php.herokuapp.com/" . str_replace("./","",$_POST['img']));
-    
     //$preference->auto_return = "approved";
 
 
