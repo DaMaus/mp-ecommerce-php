@@ -121,6 +121,7 @@
                                             <h3 class="as-producttile-name">
                                                 <p class="as-producttile-tilelink">
                                                     <span data-ase-truncate="2"><?php echo $_POST['title'] ?></span>
+                                                    <?php echo $_POST['img'] ?> 
                                                 </p>
 
                                             </h3>
@@ -137,7 +138,7 @@
                                     <script
                                         src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
                                         data-preference-id="<?php echo $preference->id; ?>">
-                                    </script>                                     
+                                    </script>                                    
                                 </div>
                             </div>
                         </div>
