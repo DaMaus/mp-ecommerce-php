@@ -4,6 +4,8 @@
     error_reporting(E_ALL);
     // SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
+    //Se agrega el integrator ID
+    MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
     // Agrega credenciales
     MercadoPago\SDK::setAccessToken('APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948');
@@ -30,9 +32,6 @@
         "area_code" => "52",
         "number" => "5549737300"
     );
-
-
-    
     
     $payer->address = array(
         "street_name" => "Insurgentes Sur",
@@ -42,5 +41,18 @@
 
     $preference->items = array($item);
     $preference->payer = $payer;
+    $preference->auto_return = "approved";
+
+
+    $preference->payment_methods = array(
+        "excluded_payment_methods" => array(
+          array("id" => "amex")
+        ),
+        "excluded_payment_types" => array(
+          array("id" => "atm")
+        ),
+        "installments" => 12
+    );
+
     $preference->save();
 ?>
