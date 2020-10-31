@@ -51,8 +51,10 @@
          "excluded_payment_types" => array(
            array("id" => "atm")
          ),
-         "installments" => 12
+         "installments" => 6
     );
+
+    $preference->notification_url ="https://hookb.in/6JpeYOZmZLuLbb031DzX";
 
     $preference->back_urls = array(
         "success" => "https://damaus-mp-commerce-php.herokuapp.com/success.php",
