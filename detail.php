@@ -134,10 +134,7 @@
                                     </div>
                                     <!-- <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button> -->
                                     
-                                    <script
-                                        src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
-                                        data-preference-id="<?php echo $preference->id; ?>">
-                                    </script>                                    
+                                    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago<a>                                  
                                 </div>
                             </div>
                         </div>
