@@ -181,7 +181,7 @@
 
 
     $preference->items = array($item);
-    $preference->payer = (array) $payer;
+    $preference->payer = $payer;
     $preference->save();
 ?>
 
