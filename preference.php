@@ -41,7 +41,7 @@
 
     $preference->items = array($item);
     $preference->payer = $payer;
-    $preference->auto_return = "approved";
+    //$preference->auto_return = "approved";
 
 
     // $preference->payment_methods = array(
