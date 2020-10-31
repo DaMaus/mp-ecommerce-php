@@ -18,7 +18,7 @@
     $item->id = "1234";
     $item->title = $_POST['title'];
     $item->description = "Dispositivo móvil de Tienda e-commerce";
-    $item->picture_url = $_POST['img'];
+    $item->picture_url = "https://damaus-mp-commerce-php.herokuapp.com/" . str_replace("./","",$_POST['img']);
     $item->quantity = $_POST['unit'];
     $item->unit_price = $_POST['price'];
     $item->external_reference = "mhernandez4204@gmail.com";
@@ -41,6 +41,9 @@
 
     $preference->items = array($item);
     $preference->payer = $payer;
+
+    echo ("https://damaus-mp-commerce-php.herokuapp.com/" . str_replace("./","",$_POST['img']));
+    
     //$preference->auto_return = "approved";
 
 
