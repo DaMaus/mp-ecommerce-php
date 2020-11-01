@@ -80,6 +80,20 @@
                                         <p>Payment Method: <?= $_GET['payment_type'];?></p>
                                         <p>External Reference: <?= $_GET['external_reference'];?></p>
                                         <p>Payment ID: <?= $_GET['payment_id'];?></p>
+
+                                        <?php 
+                                        $client = new http\Client;
+                                        $request = new http\Client\Request;
+                                        $request->setRequestUrl('https://api.mercadopago.com/v1/'. $_GET['payment_id']);
+                                        $request->setRequestMethod('GET');
+                                        $request->setOptions(array());
+                                        $request->setHeaders(array(
+                                          'Authorization' => 'Bearer APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948'
+                                        ));
+                                        $client->enqueue($request)->send();
+                                        $response = $client->getResponse();
+                                        echo $response->getBody();
+                                        ?>
                                 </div>
                             </div>
                         </div>
