@@ -136,7 +136,7 @@
                                     
                                     <a href="<?= $preference->init_point; ?>">Pagar con Mercado Pago<a> 
                                     <pre>
-                                    <?php echo var_dump($preference->init_id); ?>
+                                    <?php echo var_dump($preference->id); ?>
                                     </pre>
                                                                      
                                 </div>
