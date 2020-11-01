@@ -101,7 +101,7 @@
                                         $response = curl_exec($curl);
                                         
                                         curl_close($curl);
-                                        echo $response;
+                                        print_r(json_decode($response));
                                         ?>
                                 </div>
                             </div>
