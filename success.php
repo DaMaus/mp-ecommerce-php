@@ -80,29 +80,6 @@
                                         <p>Payment Method: <?= $_GET['payment_type'];?></p>
                                         <p>External Reference: <?= $_GET['external_reference'];?></p>
                                         <p>Payment ID: <?= $_GET['payment_id'];?></p>
-
-                                        <?php 
-                                        $curl = curl_init();
-
-                                        curl_setopt_array($curl, array(
-                                          CURLOPT_URL => "https://api.mercadopago.com/v1/payments/12135583011",
-                                          CURLOPT_RETURNTRANSFER => true,
-                                          CURLOPT_ENCODING => "",
-                                          CURLOPT_MAXREDIRS => 10,
-                                          CURLOPT_TIMEOUT => 0,
-                                          CURLOPT_FOLLOWLOCATION => true,
-                                          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                                          CURLOPT_CUSTOMREQUEST => "GET",
-                                          CURLOPT_HTTPHEADER => array(
-                                            "Authorization: Bearer APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948"
-                                          ),
-                                        ));
-                                        
-                                        $response = curl_exec($curl);
-                                        
-                                        curl_close($curl);
-                                        print_r(json_decode($response));
-                                        ?>
                                 </div>
                             </div>
                         </div>
