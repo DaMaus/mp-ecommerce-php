@@ -56,7 +56,7 @@
          "installments" => 6
     );
 
-    $preference->notification_url ="https://damaus.free.beeceptor.com";
+    $preference->notification_url ="https://webhook.site/ef0f1e5d-d57a-4d8e-a1f4-5423dc96653b";
 
     $preference->back_urls = array(
         "success" => "https://damaus-mp-commerce-php.herokuapp.com/success.php",
