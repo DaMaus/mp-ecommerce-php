@@ -82,17 +82,26 @@
                                         <p>Payment ID: <?= $_GET['payment_id'];?></p>
 
                                         <?php 
-                                        $client = new http\Client;
-                                        $request = new http\Client\Request;
-                                        $request->setRequestUrl('https://api.mercadopago.com/v1/'. $_GET['payment_id']);
-                                        $request->setRequestMethod('GET');
-                                        $request->setOptions(array());
-                                        $request->setHeaders(array(
-                                          'Authorization' => 'Bearer APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948'
+                                        $curl = curl_init();
+
+                                        curl_setopt_array($curl, array(
+                                          CURLOPT_URL => "https://api.mercadopago.com/v1/payments/12135583011",
+                                          CURLOPT_RETURNTRANSFER => true,
+                                          CURLOPT_ENCODING => "",
+                                          CURLOPT_MAXREDIRS => 10,
+                                          CURLOPT_TIMEOUT => 0,
+                                          CURLOPT_FOLLOWLOCATION => true,
+                                          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                                          CURLOPT_CUSTOMREQUEST => "GET",
+                                          CURLOPT_HTTPHEADER => array(
+                                            "Authorization: Bearer APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948"
+                                          ),
                                         ));
-                                        $client->enqueue($request)->send();
-                                        $response = $client->getResponse();
-                                        echo $response->getBody();
+                                        
+                                        $response = curl_exec($curl);
+                                        
+                                        curl_close($curl);
+                                        echo $response;
                                         ?>
                                 </div>
                             </div>
