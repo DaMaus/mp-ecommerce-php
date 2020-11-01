@@ -134,7 +134,7 @@
                                     </div>
                                     <!-- <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button> -->
                                     
-                                    <a href="<?= $preference->init_point; ?>">Pagar con Mercado Pago<a> 
+                                    <a href="<?= $preference->init_point; ?>">Pagar la compra<a> 
                                     <pre>
                                     <?= ($preference->id); ?>
                                     </pre>
