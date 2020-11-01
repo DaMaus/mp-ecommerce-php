@@ -137,7 +137,7 @@
                                     <a href="<?= $preference->init_point; ?>">Pagar con Mercado Pago<a> 
                                     <pre>
                                     <?= ($preference->id); ?>
-                                    <?= ($preference['item']['picture_url']); ?>
+                                    <?= print_r($preference); ?>
                                     </pre>
                                                                      
                                 </div>
