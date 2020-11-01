@@ -73,8 +73,6 @@
                         <div class="as-searchnav-placeholder" style="height: 77px;">
                             <div class="row as-search-navbar" id="as-search-navbar" style="width: auto;">
                                 <div class="as-accessories-filter-tile column large-6 small-3">
-
-                                    <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                         <h2 class=" as-filter-button-text">
                                             Felicidades por tu compra
                                         </h2>
@@ -82,7 +80,11 @@
                                         <p>Payment Method: <?= $_GET['payment_type'];?></p>
                                         <p>External Reference: <?= $_GET['external_reference'];?></p>
                                         <p>Payment ID: <?= $_GET['payment_id'];?></p>
-                                    </button>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
                                 </div>
                             </div>
                         </div>

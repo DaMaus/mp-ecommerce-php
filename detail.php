@@ -134,9 +134,9 @@
                                     </div>
                                     <!-- <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button> -->
                                     
-                                    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago<a> 
+                                    <a href="<?= $preference->init_point; ?>">Pagar con Mercado Pago<a> 
                                     <pre>
-                                    <?php echo var_dump($preference); ?>
+                                    <?php echo var_dump($preference->init_id); ?>
                                     </pre>
                                                                      
                                 </div>
